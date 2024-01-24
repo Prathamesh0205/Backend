@@ -99,7 +99,7 @@ const Navbar = () => {
     const reqOption = {
       method: 'get',
     }
-    const data = await fetch(`http://localhost:8000/crypt/fetch`, reqOption)
+    const data = await fetch(`https://backend1-rurz.onrender.com/crypt/fetch`, reqOption)
     const fdata = await data.json()
     console.log(fdata.obj)
     setData(fdata.obj)
