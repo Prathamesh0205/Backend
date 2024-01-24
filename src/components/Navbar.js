@@ -44,7 +44,7 @@ const Navbar = () => {
         method: 'get',
       }
       const data = await fetch(
-        `https://app.netlify.com/sites/neon-pixie-7e072b/deploys/${selectedOption}`,
+        `https://backend1-rurz.onrender.com/${selectedOption}`,
         reqOption
       )
       const data2 = await data.json()
@@ -76,7 +76,7 @@ const Navbar = () => {
       method: 'get',
     }
     const data = await fetch(
-      `http://localhost:8000/${x.toLowerCase()}`,
+      `https://backend1-rurz.onrender.com/${x.toLowerCase()}`,
       reqOption
     )
     const d = await data.json()
